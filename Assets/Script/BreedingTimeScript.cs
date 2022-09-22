@@ -39,10 +39,10 @@ public class BreedingTimeScript : MonoBehaviour
     {
         //display new animal panel...
         newAnimalPannel.SetActive(true);
-        
+
         //Hide timer container...
         gameObject.SetActive(false);
-        
+
         //hide the buttons...
         buttons.SetActive(false);
 
@@ -57,10 +57,10 @@ public class BreedingTimeScript : MonoBehaviour
     {
         //hide animal panel...
         newAnimalPannel.SetActive(false);
-        
+
         //Show buttons again...
         buttons.SetActive(true);
-        
+
         //Set camera back to normal...
         camera.cullingMask = layers2;
         newHorse.SetActive(false);

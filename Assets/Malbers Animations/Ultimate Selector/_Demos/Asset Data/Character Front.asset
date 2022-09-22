@@ -17,7 +17,7 @@ MonoBehaviour:
   Save:
     Coins: 900
     RestoreCoins: 900
-    FocusedItem: 0
+    FocusedItem: 2
     Locked: 010000010101
     RestoreLocked: 010000010101
     ItemsAmount: 010000000100000001000000010000000100000001000000

@@ -11,7 +11,7 @@ public class BreedingSystem : MonoBehaviour
     void Start()
     {
         breedStarted = true;    
-        StartCoroutine(ChangeHorseTexture());
+       // StartCoroutine(ChangeHorseTexture());
     }
 
     // Update is called once per frame

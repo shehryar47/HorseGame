@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Race_Ascot.unity
     guid: adff5b3f0c89d9744a5c58d36a7fc594
   - enabled: 1
-    path: Assets/Scenes/BreedingSystem.unity
-    guid: 9ba613e17cacf6a44b4d8e14e1ed2533
+    path: Assets/Scenes/BreedScene.unity
+    guid: e01a26e748823964797edc7e758ffbff
   m_configObjects: {}

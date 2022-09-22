@@ -8,14 +8,14 @@ public class ChangeCamera : MonoBehaviour
     public GameObject camToEnable;
     public GameObject camToDisable; 
     public GameObject rightCamera; 
-   /* private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Horse"))
         {
             camToEnable.SetActive(true);
             camToDisable.SetActive(false);
         }
-    }*/
+    }
     public void Start()
     {
         Invoke("RightCameraShift", 5f);

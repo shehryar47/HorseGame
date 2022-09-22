@@ -13,7 +13,8 @@ public class BreedingTimeScript : MonoBehaviour
     [Header("New Animal Panel variables")]
     public GameObject newAnimalPannel;
     public GameObject newHorse;
-    public GameObject PopUp;    
+    
+    public ParticleSystem particleSystem;   
     public GameObject buttons;
 
     [Header("Camera and canvas related variables")]
@@ -21,6 +22,7 @@ public class BreedingTimeScript : MonoBehaviour
     public GameObject canvas;
     public LayerMask layers1;
     public LayerMask layers2;
+    public GameObject babyCamera;
 
     private void Update()
     {
@@ -38,7 +40,7 @@ public class BreedingTimeScript : MonoBehaviour
     void ShowNewAnimal()
     {
         //display new animal panel...
-        newAnimalPannel.SetActive(true);
+        //newAnimalPannel.SetActive(true);
 
         //Hide timer container...
         gameObject.SetActive(false);
@@ -47,10 +49,14 @@ public class BreedingTimeScript : MonoBehaviour
         buttons.SetActive(false);
 
         //Set camera and canvas to display 3D horse prefab...
-        camera.cullingMask = layers1;
-        PopUp.SetActive(true);
+        //camera.cullingMask = layers1;
+        //PopUp.SetActive(true);
+        babyCamera.SetActive(true);
+        particleSystem.gameObject.SetActive(true);
+        particleSystem.Play();
+
         newHorse.SetActive(true);
-        canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+        //canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
     }
 
     public void RemoveNewAnimalCanvas()
@@ -64,7 +70,7 @@ public class BreedingTimeScript : MonoBehaviour
         //Set camera back to normal...
         camera.cullingMask = layers2;
         newHorse.SetActive(false);
-        PopUp.SetActive(false);
+        //PopUp.SetActive(false);
         canvas.GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
         timer = 180;
     }

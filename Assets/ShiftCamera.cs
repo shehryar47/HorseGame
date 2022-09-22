@@ -17,7 +17,7 @@ public class ShiftCamera : MonoBehaviour
     }
     public void Start()
     {
-        //Invoke("RightCameraShift", 5f);
+        Invoke("RightCameraShift", 5f);
     }
     void RightCameraShift()
     {

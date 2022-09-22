@@ -13,6 +13,11 @@ TagManager:
   - FinishLine
   - Horse
   - CheckPoints
+  - Selector
+  - Manager
+  - Jockey
+  - CPUHorseNose
+  - HorseLookNode
   layers:
   - Default
   - TransparentFX
@@ -21,7 +26,7 @@ TagManager:
   - Water
   - UI
   - BreededHorse
-  - 
+  - Poles
   - 
   - 
   - 
